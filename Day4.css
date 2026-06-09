@@ -3,7 +3,7 @@ body{
     background-color: black;
 }
 
-/* p{
+/* p{   
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
     font-style: italic;
@@ -12,7 +12,19 @@ body{
 img{
     height: 500px;
     width: 500px;
-    border-radius: 500px;
+    /* border-radius: 500px; */
+}
+
+@media (max-width: 600px) {
+    img{
+        height: auto;
+        width: 100%;
+    }
+    
+}
+
+video {
+    width: 100%;
 }
 
 ol{
@@ -33,7 +45,7 @@ button{
     background-color: cornsilk;
     padding: 10px;
     margin: 20px;
-}
+} 
 
 button:hover{
     background-color: blue;
@@ -47,7 +59,15 @@ table{
 nav{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+}
+
+@media (min-width: 1024px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    
 }
 
 #p1{
@@ -63,7 +83,14 @@ nav{
 }
 
 .grid{
-    display: grid1/2;
-    grid-template-columns: 33% 33% 33%;
+    display: grid;
+}
+
+@media (min-width: 1024px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    
 }
 

@@ -1,0 +1,8 @@
+
+function Heading(){
+    return(
+        <h1>searchbar</h1>
+    )
+}
+
+export default Heading;
